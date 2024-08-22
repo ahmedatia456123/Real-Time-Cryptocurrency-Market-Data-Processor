@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="NewLiveScanner.css">
+    <title>Futuer LiveScreaner</title>
+</head>
+<body>
+    <div onclick="closeWS()">Close connection</div>
+    <div onclick="connectingWS()">Connecting</div>
+    <div class="tools"></div>
+    <div class="main1">
+      
+        <table id="main">
+            <thead >
+              <tr>
+                <th class='coinName'>Name</th>
+                <th class='spread'>Spread</th>
+                <th class='AMPL'>AMPL</th>
+                <th class='VolChg'>Vol Change</th>
+                <th class='NTrades'>No. Trades</th>
+              </tr>
+            </thead>
+            <tbody id="mainBoody">
+              
+            </tbody>
+          </table>
+          <div class="cards">
+            
+          </div>
+          <div class="Customcards">
+            
+          </div>
+    <div>
+    <audio style="display: none;" id="myAudio" controls >
+        <source src="alarm_tone.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <div onclick="autoplayAlarm()"></div>
+    <script src="NewLiveScanner.js"></script>
+</body>
+</html>

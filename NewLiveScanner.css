@@ -1,0 +1,196 @@
+body{    background: #2a2e39;
+  color: #d1d4dc;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: system-ui;}
+.main1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+tbody#mainBoody {
+  display: grid;
+}
+table#main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  table-layout: fixed;
+  width: 100%;
+}
+tr {
+    flex: 1;
+    width: 100%;
+    display: flex;
+}
+th {
+  padding: 10px;
+  flex: 1;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    font-family: Arial, sans-serif;
+  }
+  
+  thead {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+
+  
+  tr:hover {
+    background-color: #ddd;
+    color : black
+  }
+  
+  td:first-child, th:first-child {
+    padding-left: 20px;
+  }
+  
+  td:last-child, th:last-child {
+    padding-right: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    table {
+      font-size: 14px;
+    }
+    
+    th, td {
+      padding: 5px;
+    }
+    
+    td:first-child, th:first-child {
+      padding-left: 10px;
+    }
+    
+    td:last-child, th:last-child {
+      padding-right: 10px;
+    }
+  }
+  th, td {
+    border: 1px solid black;
+  }
+  .cards {
+    width: 20%;
+}
+.card {
+  background: #242424;
+  color: white;
+  padding: 1em;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.cardHeader,.cardFooter {
+  text-align: center;
+  margin: 5px;
+}
+.del {
+  width: 20px;
+  height: 20px;
+  background-image: url(file:///D:/Trading%20Data/trash-can.png);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+.selector {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.5em;
+  margin: 0.5em;
+}
+/* Style for the parent container */
+.selector {
+  display: flex;
+  align-items: center;
+}
+
+/* Style for the select element */
+.coinCname {
+  padding: 8px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+/* Style for the input elements */
+#volume,
+#spread,
+#amp {
+  padding: 8px;
+  border-radius: 4px;
+  margin-right: 10px;
+  width: 80px;
+}
+
+/* Style for the button element */
+.add {
+  background-color: #3b88c3;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Hover effect for the button element */
+.add:hover {
+  background-color: #2c649b;
+}
+/* Style for the parent container */
+.icon {
+  display: flex;
+  align-items: center;
+  background-color: #2e2e2e;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: 1px solid white;
+  width: fit-content;
+}
+
+/* Style for the delete button */
+.del {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 4px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 8px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+/* Hover effect for the delete button */
+.del:hover {
+  background-color: #c0392b;
+}
+
+/* Style for the text */
+.icon > span {
+  margin-right: 8px;
+}
+.selectorInfo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
